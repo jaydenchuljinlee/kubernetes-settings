@@ -18,5 +18,5 @@ spec:
         image: ironjin92/my-app:v1
         ports:
         - containerPort: 8000
-      # imagePullSecrets:
-      # - name: argo-docker-registry
+      imagePullSecrets:
+      - name: docker-registry-secret
